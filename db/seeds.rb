@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-u1 = User.create :username => 'jessdiv', :email => 'jess@ga.com', :password => 'chicken', :admin => true
-u2 = User.create :username => 'sarita', :email => 'sarita@ga.co', :password => 'chicken', :admin => false
+u1 = User.create :username => 'jessdiv', :email => 'jess@ga.com', :password_digest => 'chicken', :admin => true
+u2 = User.create :username => 'sarita', :email => 'sarita@ga.co', :password_digest => 'chicken', :admin => false
 
 Airplane.destroy_all
 a1 = Airplane.create :total_seats => 10
@@ -16,6 +16,16 @@ a1 = Airplane.create :total_seats => 10
 Flight.destroy_all
 f1 = Flight.create :origin => 'Sydney', :destination => 'Melbourne'
 
-# Associations ####
+Seat.destroy_all
+s1 = Seat.create
+s2 = Seat.create
+s3 = Seat.create
+s4 = Seat.create
+s5 = Seat.create
+s6 = Seat.create
+s7 = Seat.create
+s8 = Seat.create
+s9 = Seat.create
+s10 = Seat.create
 
-f1.airplane << a1
+f1.seats << s1 << s2 << s3 << s4 << s5 << s6 << s7 << s8 << s9 << s10

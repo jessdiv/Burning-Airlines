@@ -1,16 +1,16 @@
 # == Schema Information
 #
-# Table name: reservations
+# Table name: seats
 #
 #  id         :bigint(8)        not null, primary key
-#  user_id    :integer
 #  flight_id  :integer
-#  seat_ref   :integer
+#  user_id    :integer
+#  seat_num   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Reservation < ApplicationRecord
-  belongs_to :user, :optional => true
+class Seat < ApplicationRecord
   belongs_to :flight, :optional => true
+  belongs_to :user, :optional => true
 end
