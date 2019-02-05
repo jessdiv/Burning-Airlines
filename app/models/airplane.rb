@@ -1,15 +1,13 @@
 # == Schema Information
 #
-# Table name: flights
+# Table name: airplanes
 #
 #  id          :bigint(8)        not null, primary key
-#  origin      :text
-#  destination :text
-#  date        :date
-#  airplane_id :integer
+#  total_seats :integer
+#  seat        :boolean
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
 
-class Flight < ApplicationRecord
+class Airplane < ApplicationRecord
 end

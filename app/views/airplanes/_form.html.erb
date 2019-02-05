@@ -1,0 +1,27 @@
+<%= form_with(model: airplane, local: true) do |form| %>
+  <% if airplane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(airplane.errors.count, "error") %> prohibited this airplane from being saved:</h2>
+
+      <ul>
+      <% airplane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :total_seats %>
+    <%= form.number_field :total_seats %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seat %>
+    <%= form.check_box :seat %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
