@@ -14,7 +14,9 @@ Airplane.destroy_all
 a1 = Airplane.create :total_seats => 10
 
 Flight.destroy_all
-f1 = Flight.create :origin => 'Sydney', :destination => 'Melbourne', :date => 10-02-2019
+f1 = Flight.create :origin => 'Sydney', :destination => 'Melbourne', :date => 2019-02-10
+f2 = Flight.create :origin => 'Sydney', :destination => 'Perth', :date => 2019-02-12
+f3 = Flight.create :origin => 'Melbourne', :destination => 'Sydney', :date => 2019-02-14
 
 Seat.destroy_all
 s1 = Seat.create
