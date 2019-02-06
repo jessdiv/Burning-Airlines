@@ -29,5 +29,28 @@ s7 = Seat.create
 s8 = Seat.create
 s9 = Seat.create
 s10 = Seat.create
+s11 = Seat.create
+s12 = Seat.create
+s13 = Seat.create
+s14 = Seat.create
+s15 = Seat.create
+s16 = Seat.create
+s17 = Seat.create
+s18 = Seat.create
+s19 = Seat.create
+s20 = Seat.create
+s21 = Seat.create
+s22 = Seat.create
+s23 = Seat.create
+s24 = Seat.create
+s25 = Seat.create
+s26 = Seat.create
+s27 = Seat.create
+s28 = Seat.create
+s29 = Seat.create
+s30 = Seat.create
+
 
 f1.seats << s1 << s2 << s3 << s4 << s5 << s6 << s7 << s8 << s9 << s10
+f2.seats << s11 << s12 << s13 << s14 << s15 << s16 << s17 << s18 << s19 << s20
+f3.seats << s21 << s22 << s23 << s24 << s25 << s26 << s27 << s28 << s29 << s30
